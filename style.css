@@ -1,0 +1,164 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+.navbar {
+    background: #172554;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #93c5fd;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #dbeafe;
+}
+
+.hero h1 {
+    color: #1e40af;
+    margin-bottom: 12px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: white;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    color: #1d4ed8;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 12px 0 7px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e40af;
+}
+
+#formMessage {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.todo-input {
+    display: flex;
+    gap: 10px;
+}
+
+.todo-input input {
+    flex: 1;
+    min-width: 0;
+}
+
+#taskList {
+    list-style: none;
+    margin-top: 15px;
+}
+
+#taskList li {
+    background: #eff6ff;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.delete-btn {
+    background: #dc2626;
+}
+
+footer {
+    text-align: center;
+    background: #172554;
+    color: white;
+    padding: 18px;
+    margin-top: 40px;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        gap: 15px;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .todo-input {
+        flex-direction: column;
+    }
+}
